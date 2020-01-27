@@ -1,34 +1,3 @@
-
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US"> 
-<head> 
- 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
-<meta charset="UTF-8"/> 
- 
-<meta name="description" content="Made by Hand" /> 
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
-  
-<!-- <link href="http://thisismadebyhand.com/css/style.css" rel="stylesheet" media="all" />  -->
-
-<!-- <link rel="author" href="humans.txt" />
-  
-<script src="/mint/?js" type="text/javascript"></script>
-
-<script src="http://use.typekit.com/pnt3mmt.js"></script> 
-<script>try{Typekit.load();}catch(e){}</script>  -->
-
-<!-- <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-<script src="http://thisismadebyhand.com/js/modernizr-2.0.6.js"></script>
-<script src="http://thisismadebyhand.com/js/vimeo.js"></script>
-<script src="http://thisismadebyhand.com/js/misc.js"></script>
-<script src="http://thisismadebyhand.com/js/respond.min.js"></script> -->
-
-<title> 항상 최선을 원하는 웹디자이너 , 마지이 </title> 
-
-
-<style>
-
 /* Made by Hand styles */
 /* The visual design and layout for Made by Hand are copyright Mandy Brown and may not be reproduced. */
 
@@ -52,6 +21,11 @@ body {
 	color: #333;
 	font: 1.2em "Adobe Caslon Pro Bold"; /* 18px/16px */
 }
+
+.position{  /* 탑 보턴 클릭시 이동 이미지로 바꺼서 다시 정렬*/
+  text-align: right;
+}
+
 #wrapper { max-width: 1200px; margin: 0 auto; background: #F1F1EF; overflow: hidden; }
 h2.title {
 	width: 45%; /* 540px/1200px */
@@ -86,26 +60,25 @@ dt {
 }
 dd { margin-bottom: 1.5em; /* 24px/16px */ font-style: italic; }
 p { margin: .75em 0; }
-a { 
+
+a {   /* nav 텍스트 스타일 변화*/
 	color: #333; 
 	font-family: "museo-sans-rounded-1", "museo-sans-rounded-2", sans-serif;
 	text-decoration: none; 
 	font-style: normal; 
 	font-weight: bold; 
 }
+
+
 a:hover {color: #2CBAE2;}
+
 dd a { 
-	font-style: italic;
+	
 	font-weight: bold; 
-	font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Times New Roman", Georgia, serif; 
+	font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2"; 
 }
 strong { font-weight: bold; }
 .twitter { text-transform: lowercase; }
-/*
-/** ----------------------
- 	navigation 
----------------------- **/
- 
 
 
 /** -----------------------------
@@ -364,34 +337,13 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 @media screen and (max-width: 1150px) { 
 	.film-container { text-align: center; } 
 	.player { width: 94.921875%; /* 972px/1024px */ margin: 0 auto; } 
-    .film-desc { text-align: left; }
-
-      /* 토글 버튼 */
-      .menuBtn {
-        display:none;
-    }
-
-    /* 내비게이션 */
-    .menuNav {
-
-        /* !important는 지정한 스타일의 속성이 중요하기 때문에 변경을 막기위 해지 지정한다. */
-        display:block !important;
-    }
-
-    .menuNav li {
-        float:left;
-        width:auto;
-    }
-    
- 
+	.film-desc { text-align: left; }
 }
-
-
 
 /* ---- 
 	max-width 1024px 
 ---- */
-@media screen and (min-width: 1024px) { 
+@media screen and (max-width: 1024px) { 
     /*영상크기 조율*/
 	.film-desc { width: 44.921875%; /* 345px/768px */ margin-right: 3.90625%; /* 29px/768px */ }
 	.film-list { width: 94.791667%; /* 728px/768px */ }
@@ -402,26 +354,7 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	#footer .twitter-feed li { width: 45%; }
 	#footer .twitter-feed li:first-child { margin-right: 45px; }
 	#footer .twitter-feed li:last-child { display: none; }
-    #footer .newsletter input[type="text"] {width: 285px;}
-    
-    
-    /* 토글 버튼 */
-    .menuBtn {
-        display:none;
-    }
-
-    /* 내비게이션 */
-    .menuNav {
-
-        /* !important는 지정한 스타일의 속성이 중요하기 때문에 변경을 막기위 해지 지정한다. */
-        display:block !important;
-    }
-
-    .menuNav li {
-        float:left;
-        width:auto;
-    }
-    
+	#footer .newsletter input[type="text"] {width: 285px;}
 }
 /* ---- 
 	max-width 768px 
@@ -431,44 +364,7 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	h2.title span { width: 75%; }
 	.about .project, .shoppe .shoppe-list { width: 94.791667%; /* 728px/768px */ }
 	#footer .about-project p { width: 41.40625%; }
-    #footer .newsletter input[type="text"] {width: 60%;}
-    
-
-  /* 토글 버튼 */
-  .menuBtn {
-        padding-top:6px;
-        padding-left:10px;
-        padding-right:10px;
-        padding-bottom:2px;
-        border:1px solid #AAAAAA;
-        border-radius:5px;
-        background-color:#FFFFFF;
-        cursor:pointer;
-    }
-
-    /* 클릭시 배경색 변경 */
-    .menuBtn:hover {
-        background-color:#DDDDDD;
-    }
-   
-    /* 파란색 테두리 제거 */
-    .menuBtn:focus {
-        outline:none;
-    }
-   
-    .menuBtn i {
-        color:#888888;
-    }
-   
-    /* 토글버튼 글자 숨기기 */
-    .menuBtn span {
-        display:inline-block;
-        text-indent:-999px;
-    }
-
-    .menuNav {
-        display:none;
-    }
+	#footer .newsletter input[type="text"] {width: 60%;}
 	
 }
 /* ---- 
@@ -541,9 +437,7 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
   #footer .newsletter h3 {width: 100%; float: none; text-align: center; }
   #footer .newsletter form {float: none;width: 100%;margin: 0 auto;}
   #footer .newsletter input[type="text"] {width: 84.5%;float: left; margin-right: 4px;}
-    .copyright { margin-top: 1.25em; }
-    
-    
+	.copyright { margin-top: 1.25em; }
 }
 /* ----
 	max-width 480px
@@ -556,7 +450,12 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	max-width 400px
 ---- */
 @media screen and (max-width: 400px) { 
-
+	#nav { height: 3.125em; /* 28px/16px */ }
+	#nav ul { width: 70%; height: 50px; clear: both; }
+	#nav ul li:nth-child(3) a { margin-right: 0; }
+	#nav ul li:nth-child(3):after { content: ''; }
+	#nav ul li:last-child { width: 230px; }
+	#nav ul li.twitter { width: 100%; margin: 5px 26.086957%; }	
 	
 	.copyright { width: 70%; /* 280px/400px */ margin-top: 1.25em; text-align: center; }
 	.copyright span:last-child { width: 100%; float: none; margin: 0 auto; }
@@ -590,158 +489,8 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
   max-width 320px
 ---- */
 @media screen and (max-width: 320px) {
-
+  #nav ul { width: 75%; height: 50px; clear: both; }
 	.copyright { width: 87.5%; /* 280px/320px */ margin-top: 1.25em; text-align: center; }	
 	#footer .newsletter  {margin-top: 60px;}
   #footer .newsletter input[type="text"] {width: 75%;}
 }
-
-</style>
-
-<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function() {
-    jQuery(".menuBtn").click(function() {
-
-        // slideToggle은 요소의 hight 값을 조작해서 움직임을 만들어 낸다.
-        // 보이면 안보이게, 안보이면 보이게 처리한다.
-        jQuery(".menuNav").slideToggle();
-    });
-});
-</script>
- 
-</head> 
-<body>
-	
-    <nav class="menuNav" id="menuNav">
-        <ul>
-            <li><a href="#">안지현</a></li>
-            <li><a href="#">이한글</a></li>
-            <li><a href="#">박기량</a></li>
-            <li><a href="#">김맑음</a></li>
-            <li><a href="#">조연주</a></li>
-            <li><a href="#">이나경</a></li>
-            <li><a href="#">서현숙</a></li>
-        </ul>
-    </nav>
- 
-<div id="wrapper"> 
-
-  <div id="content" class="home">
-	
-	  <div id="head"> 
-	    <h1 class="logo"><img src="http://thisismadebyhand.com/imgs/logo.png" alt="Made by Hand" /></h1> 
-	    <h2 class="title"><span>No 5</span>The Bike Maker</h2> 
-	  </div><!--#head--> 
-	 
-	<div class="film-container"> 
-	    <div class="player"> 
-	      <!--[if lt IE 9]>
-			<img src="http://thisismadebyhand.com/imgs/bike-maker.jpg" class="film-fallback" alt="{film_title}" />
-		<![endif]-->
-		<iframe src="http://player.vimeo.com/video/66106900?title=0&amp;byline=0&amp;portrait=0&amp;color=f1f1ef" id="vimeo" width="1200" height="675" frameborder="0"></iframe>
-	    </div> 
-	    <div class="film-desc"> 
-	      <p>Our fifth film turns to bike maker Ezra Caldwell (Fast Boy Cycles), who was diagnosed with cancer in 2008. When the cancer threatens to shatter his love of bikes, Ezra survives by documenting his illness as thoroughly as his craft.</p>
-
-
-	      <a href="http://thisismadebyhand.com/film/the_bike_maker" class="credits">credits</a>
-	    </div><!--.film-desc-->
-	</div><!--.film--> 
-		
-
-	<div class="film-list">
-		  <h2 class="more-series"><img src="http://thisismadebyhand.com/imgs/more-series.jpg" alt="More From the Series" /></h2>
-		  <ol>
-			
-			 	 
-			  <li>
-				<a href="https://youtu.be/dhBVxb79dgM">
-			  		<div class="film-list-item">
-			  			<h2 class="title"><span>No 1</span>The Distiller</h2>
-				  		<img src="http://thisismadebyhand.com/imgs/knife-maker.png" alt="The Distiller" />
-				  		<div class="film-desc">
-				  			<p>In our inaugural film, we visit the Breuckelen Distilling Company, the first gin distiller in Brooklyn since prohibition. Founder Brad Estabrooke talks about starting from nothing and the imperfect process of perfecting a craft. His experience bears a lesson for us all: knowing you could fail brings you that much closer to success.</p>
-				  		</div><!--.film-desc-->
-			  		</div><!--.film-list-item-->
-			  	</a>
-			  </li>
-			  	 
-			  <li>
-				<a href="http://thisismadebyhand.com/film/the_knife_maker">
-			  		<div class="film-list-item">
-			  			<h2 class="title"><span>No 2</span>The Knife Maker</h2>
-				  		<img src="http://thisismadebyhand.com/imgs/cut-brooklyn.png" alt="The Knife Maker" />
-				  		<div class="film-desc">
-				  			<p>Writer turned knife maker Joel Bukiewicz of Cut Brooklyn talks about the human element of craft, and the potential for a skill to mature into an art. And in sharing his story, he alights on the real meaning of handmade&#8212;a movement whose riches are measured in people, not cash. </p>
-
-
-				  		</div><!--.film-desc-->
-			  		</div><!--.film-list-item-->
-			  	</a>
-			  </li>
-			  	 
-			  <li>
-				<a href="http://thisismadebyhand.com/film/the_beekeeper">
-			  		<div class="film-list-item">
-			  			<h2 class="title"><span>No 3</span>The Beekeeper</h2>
-				  		<img src="http://thisismadebyhand.com/imgs/beekeeper2.jpg" alt="The Beekeeper" />
-				  		<div class="film-desc">
-				  			<p>Local farmer Megan Paska has witnessed beekeeping as it morphed from an illegal (and possibly crazy) habit to a sustainable, community-supported skill. Mirroring beekeeping&#8217;s own ascendance, she found more than just a living: &#8220;This is the first time in my life when I&#8217;ve just felt absolutely on the right path.&#8221;</p>
-				  		</div><!--.film-desc-->
-			  		</div><!--.film-list-item-->
-			  	</a>
-			  </li>
-			  	 
-			  <li>
-				<a href="http://thisismadebyhand.com/film/the_cigar_shop">
-			  		<div class="film-list-item">
-			  			<h2 class="title"><span>No 4</span>The Cigar Shop</h2>
-				  		<img src="http://thisismadebyhand.com/imgs/cigar.jpg" alt="The Cigar Shop" />
-				  		<div class="film-desc">
-				  			<p>In 1974, Dominican immigrant Don Antonio Martinez started a small shop in New York City selling hand rolled cigars. Thirty-eight years later his son, Jesus, carries on the tradition. The shop combines craftsmanship with community, mixing equal parts work and play.</p>
-				  		</div><!--.film-desc-->
-			  		</div><!--.film-list-item-->
-			  	</a>
-			  </li>
-			  
-		  </ol>
-      </div><!--.film-list-->
-      
-      
-      
-    </div><!--#content-->
-    </div><!--#wrapper (opens in includes/document_head)--> 
-
-        <div class="top">
-          <a href="#">TOP</a>
-        </div>
-
-	<div id="footer"> 
-		<div class="about-project section group"> 
-		    <h1 class="logo"><img src="http://thisismadebyhand.com/imgs/invert-logo.png" alt="Made by Hand" /></h1> 
-		    <p>Made by Hand is a short film series celebrating the people who make things by hand&nbsp;&#8212; sustainably, locally, and with a love for their craft. <a href="../about/">more</a></p>
-	 	</div><!--.section--> 
-    <div class="newsletter section group">
-      <h3>Subscribe</h3>
-      <form action="http://madebyhand.createsend.com/t/r/s/cdhdru/" method="post" id="subForm">
-        <div>
-          <label for="cdhdru-cdhdru"></label>
-          <input type="text" name="cm-cdhdru-cdhdru" id="cdhdru-cdhdru" placeholder="you@yourdomain.com"/>
-          <input type="image" alt="go" src="/imgs/btn-go.gif" />
-        </div>
-      </form>
-    </div><!--.newsletter-->
-
-  
-
-	 	<div class="copyright">
-	 		<script type="text/javascript">
-           </script>
-
-	 		<span>Copyright &copy; 2020 Made by Hand.</span><span>All rights reserved.</span>
-	 	</div><!--.copyright--> 
-	</div><!--#footer-->
-
-</body> 
-</html> 
