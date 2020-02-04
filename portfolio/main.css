@@ -124,6 +124,26 @@ strong { font-weight: bold; }
 #head { width: 100%; height: 50px; margin: 2em auto .75em; display: block;   margin-bottom: 12.546em;}
 
 
+#skills{ width: 100%; text-align: center;  }  /* text-align: center 에 ul에 inline-block 해야 다 가운데 정렬이된다.*/
+.heading{ padding-bottom: 1em; font-size: 1.3em; color: lightskyblue; }
+
+#skills ul{ 
+	display: inline-block;
+	/* border-top: 1px solid rgb(168, 168, 168); */
+	padding-top: 0.5em; 
+			}
+			
+#skills ul li{
+	 color: rgb(27, 27, 27);
+     background-color:rgb(216, 216, 216); 
+     float: left;
+	 /* outline: 1px solid rgb(167, 167, 167);  */
+	 padding: 0.256em;
+	 margin-left: 20px;
+	 margin-bottom: 0.4em;
+           }
+
+
 /*  logo 변경  */
 #head h1.logo, #footer h1.logo {
 	width: 50%; /* 600px/1200px */
@@ -143,10 +163,11 @@ strong { font-weight: bold; }
  	film
 ---------------------- **/
 .film-container { margin: 0 auto;
-				 
+				 padding-bottom: 8em;
+				
 				 }
 
-.film-intro { width: 42.23234%; /* 485px/1200px */ float: right; clear: both; margin: -15% 8.5% 7em 0; }
+.film-intro { width: 42.23234%; /* 485px/1200px */ float: right; clear: both; margin: -15% 8.5% 7em 0;  border-top: 2px solid #666;  }
 
 .player { width: 100%; clear: both; position: relative; }
 .player iframe { z-index: 0; }
@@ -293,32 +314,7 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	overflow: hidden;
 }
 
-/*---- Twitter feed ----*/
-/* .twitter-feed { 
-	width: inherit; 
-	margin: 4em auto .5em; 
-	padding-bottom: 2em;
-	border-top: 2px solid #666;
-	border-bottom: 2px solid #666; 
-	overflow: visible;
-} 
-.twitter-feed h2 { margin-top: -15px; text-align: center; }
-.twitter-feed h2 img { margin: 0 auto; }
-.twitter-feed ol { width: 100%; height: 140px; margin: .66666667em auto; padding: 0 .5%; }
-.twitter-feed ol li { 
-	width: 31.666667%; /* 380xp/1200px 
-	float: left; 
-	display: block; 
-	margin-right: 1.666667%; 
-}
-#footer .twitter-feed a { font-weight: 300; color: #fff; font-size: .88888889em; /* 16px/18px }
-#footer .twitter-feed a:hover {color: #38cbf6;}
-.twitter-feed .date {
-	font-size: .66666667em; 
-	font-style: normal;
-	font-weight: 100;
-	font-family: "museo-sans-rounded-1", "museo-sans-rounded-2", sans-serif; 
-} */
+
 
 /*---- Copyright ----*/
 .copyright { width: 370px; height: 2em; margin: 20px auto; font-size: .77777778em; /* 14px/18px */ }
@@ -423,6 +419,11 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 
 
 	.film-desc { float: none; }
+
+
+	#skills {width: 100%; text-align: center;}
+
+
 	.film-list ol li { 
 		min-height: 470px; 
 		margin: .75em 0;
