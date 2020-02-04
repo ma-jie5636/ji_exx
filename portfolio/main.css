@@ -16,15 +16,22 @@ ol, ul { list-style: none; }
 /** ----------------------
  	general 
 ---------------------- **/
-body {
-	background: #F1F1EF;
+
+
+body {  /* 전체 페이지 */
+	background: rgb(255, 255, 255);  /*1200px 제외된 나머지 바탕 색*/
 	color: #333;
-	font: 1.2em "Adobe Caslon Pro Bold"; /* 18px/16px */
+	font: 1.14564em "Adobe Caslon Pro Bold"; /* 18px/16px */
 }
 
 .position{  /* 탑 보턴 클릭시 이동 이미지로 바꺼서 다시 정렬*/
   text-align: right;
- 
+}
+
+.position img{
+
+	width: 30px;
+	height: 30px;
 }
 
 
@@ -35,21 +42,23 @@ body {
 	
 }
 
-
-#wrapper { max-width: 1200px; margin: 0 auto; background: #F1F1EF; overflow: hidden; }
+/* 반응현 안  contents*/
+#wrapper { max-width: 1200px; margin: 0 auto; background: rgb(255, 255, 255); overflow: hidden; }
 
 h2.title {   /* 내소개 폰트 설정*/
-	width: 45%; /* 540px/1200px */
+	width: 50%; /* 540px/1200px */
 	font-size: 1.55555em; /* 32px/16px */
 	/* font-style: italic; */
 	font-weight: normal;
-	color: #333;
-	float: left; 
-	margin-left: 2%; /* 24px/1200px */
+	color: rgb(15, 15, 15);
+	float: right;   /* 1200px  50 % > 600px 안에 오른쪽 정렬*/
+	margin-left: 1%; /* 24px/1200px */
 	display: block;
-	padding-bottom: 50px;
+
 }
+
 h2.title span {  /* 상단 webdesigner 글자 설정*/
+
 	margin-top: -1px;
 	color: #666; 
 	font: 300 .4375em/1.2 ; /* 14px/32px */
@@ -72,7 +81,7 @@ h3.title span{
 	color: #666; 
 	font: 500 .4375em/1.2 ; /* 14px/32px */
 	/* display: block;  */
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	padding-right: 20px;
 }
 
@@ -112,31 +121,47 @@ strong { font-weight: bold; }
 /** -----------------------------
  	MBH heading (in header & footer) 
 ------------------------------ **/
-#head { width: 100%; height: 50px; margin: 3em auto .75em; display: block; }
+#head { width: 100%; height: 50px; margin: 2em auto .75em; display: block;   margin-bottom: 12.546em;}
+
+
+/*  logo 변경  */
 #head h1.logo, #footer h1.logo {
 	width: 50%; /* 600px/1200px */
 	height: 2.8125em;
 	float: left;
-	margin-left: -1%; /* 10px/600px */
+	margin-left: -15%; /* 10px/600px */
 }
-#head h1 img { float: right; width: 238px; }
+
+#head h1 img { float: right; width: 238px;  }
 
 #footer h1.logo { margin-left: -1.2%; /* 4px/600px */ }
 #footer h1.logo img { float: right; max-width: 100%; }
 
+
+
 /** ----------------------
  	film
 ---------------------- **/
-.film-container { margin: 1.5em 0; }
+.film-container { margin: 0 auto;
+				 
+				 }
+
+.film-intro { width: 42.23234%; /* 485px/1200px */ float: right; clear: both; margin: -15% 8.5% 7em 0; }
+
 .player { width: 100%; clear: both; position: relative; }
 .player iframe { z-index: 0; }
 .film-fallback { max-width: 100%; }
-.film-desc { width: 40.416667%; /* 485px/1200px */ float: right; clear: both; margin: 0 8.5% 2.25em 0; }
+
+
+
+.film-desc { width: 40.23234%; /* 485px/1200px */ float: right; clear: both; margin: 0 8.5% 2.25em 0; }
+
 /* .film-desc p { font-style: italic; } */
 .film-desc p a { font-style: normal; font-weight: bold; font-size: 20px; /* 16p/18px */}
 
+/* 
 iframe { max-width: 100%; }
-.ie6 #vimeo { width: 100%; }
+.ie6 #vimeo { width: 100%; } */
 
 /** ----------------------
  	film listings 
@@ -151,7 +176,7 @@ iframe { max-width: 100%; }
 	margin-top: -.9375em; /* 15px/16px */
 	text-align: center;
 } 
-.film-list h2.more-series img { width: 284px; margin: 0 auto; }
+/* .film-list h2.more-series img { width: 284px; margin: 0 auto; } */
 
 /* Hover color for each film list item */
 .film-list a:hover h2.title, .film-list a:hover h2 span {color: #28A8CC;}
@@ -161,11 +186,12 @@ iframe { max-width: 100%; }
 	width: 100%; 
 	height: 15em; /* 270px/16px */
 	margin: .75em 0 1.25em; 
-	padding-bottom: 24px; 
+	padding-bottom: 3em; 
 	border-bottom: 1px solid #ccc; 
 }
+
 .film-list ol li:last-child {border-bottom: none;}
-.film-list-item h2.title, .film-list-item img, .film-list-item .film-desc { width: 48.5%; /* 485px/1000px */ }
+.film-list-item h2.title, .film-list-item img, .film-list-item .film-desc { width: 48.5%; /* 485px/1000px  height는 적용 안됨*/ }
 .film-list-item h2.title { 
 	margin: .75em 0; 
 	float: right;
@@ -174,11 +200,13 @@ iframe { max-width: 100%; }
 	font-size: 1.75em; /* 28px/16px */
 	font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Times New Roman", Georgia, serif;
 }
+
 .film-list-item h2.title span { width: 150px; font-size: .5em; margin-bottom: .1875em; }
 .film-list-item img { float: left; margin-bottom: 24px;}
 .film-list-item .film-desc { margin-right: .3%; float: right; clear: none; }
 a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Times New Roman", Georgia, serif; font-weight: normal;}
-}
+
+
 .film-list ol li.coming-soon, .film-list ol li:first-child  { border-top: none; }
 .film-list ol li.coming-soon h2 { color: #666; }
 
@@ -198,6 +226,7 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	padding: 0;
 	border: none; 
 }
+
 .project strong { 
 	font: bold 1em/1.5 "museo-sans-rounded-1", "museo-sans-rounded-2", sans-serif; 
 	text-transform: uppercase;
@@ -213,6 +242,7 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	overflow: hidden;
 }
 .shoppe-list-item img, .shoppe-list-item .item-desc { width: 48.5%; /* 485px/1000px */ float: left; }
+
 .shoppe-list-item .buy { 
 	color: #fff; 
 	font: .875em/1.5 "museo-sans-rounded-1", "museo-sans-rounded-2", sans-serif;
@@ -254,7 +284,7 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 ---------------------- **/
 #footer {
 	width: 100%; 
-	background: #333;
+	background: rgb(22, 22, 22);
 	color: #ccc;
 	font-style: italic;
 	padding: 3em 0;
@@ -362,20 +392,22 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	.film-list-item .film-desc, .film-list-item h2.title, .film-list-item h2.title span, 
 	#footer .about-project p, .twitter-feed ol li { width: 100%; }
 	
-	#head { height: 105px; }
+	#head { height: 205px; }
 	h2.title { 
 		width: 100%; 
 		height: 2.5em; /* 40px/16px */ 
-		float: none; 
-		text-align: center; 
-		margin: 0; 
-		display: block; 
+	    float: initial;
+		text-align: center;
+		margin-top: 8.567em;
+		padding-right: 5em;
+		/* display: none;   */
+		
 	}
 	h2.title span { 
 		width: 100%; 
-		font-size: .4375em;
+		font-size: 1em;
 		clear: both; 
-		float: left; 
+		/* float: left;  */
 		display: inline-block;
 		margin-top: 12px;
 	}
@@ -383,6 +415,13 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	#head h1.logo, #footer h1.logo { float: none; margin: 0 auto; text-align: center; }
 	#head h1.logo img { float: none; margin: 0 auto; }
 	
+
+	/* 자기 소개 중앙정렬 100% 꽉채우기*/
+    .film-intro {float: none; margin: 0 auto; text-align: left;
+	             width: 100%;
+				   }  
+
+
 	.film-desc { float: none; }
 	.film-list ol li { 
 		min-height: 470px; 
