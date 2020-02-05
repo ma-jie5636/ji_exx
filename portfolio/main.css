@@ -300,6 +300,44 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	display: inline-block; 
 }
 
+
+#homebtn { text-align: center;
+	display: block; margin: 0px auto;}
+
+/*  ------------------------------------
+	 logo.html
+	 이미지 가운데 정렬 
+-----------------------------------------*/
+
+#homebtn{ padding-bottom: 2em;}
+
+#webLogo{ width: 100%; text-align: center; }
+#webLogo2{ width: 100%; text-align: center; display: none;}
+#webLogo img{ display: inline-block; 
+			  margin: 0 auto; 
+			  padding-top: 3em; 
+			}
+
+
+
+/*  ------------------------------------
+	 web.html
+	 이미지 가운데 정렬 
+-----------------------------------------*/
+
+#{ width: 100%; text-align: center; }
+#{ display: block; margin: 0px auto;}
+
+
+/*  ------------------------------------
+	 edit.html
+	 이미지 가운데 정렬 
+-----------------------------------------*/
+
+#{ width: 100%; text-align: center; }
+#{ display: block; margin: 0px auto;}
+
+
 /** ----------------------
  	footer 
 ---------------------- **/
@@ -360,13 +398,8 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	.film-desc { width: 44.921875%; /* 345px/768px */ margin-right: 3.90625%; /* 29px/768px */ }
 	.film-list { width: 94.791667%; /* 728px/768px */ }
 	.film-list-item h2.title { margin: 0; }
-	
-	/* #footer .group { width: 94.791667%; /* 728px/768px  }
-	#footer .about-project p { width: 345px; margin-left: 21px; }
-	#footer .twitter-feed li { width: 45%; }
-	#footer .twitter-feed li:first-child { margin-right: 45px; }
-	#footer .twitter-feed li:last-child { display: none; }
-	#footer .newsletter input[type="text"] {width: 285px;} */
+
+
 }
 /* ---- 
 	max-width 768px 
@@ -377,6 +410,19 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	.about .project, .shoppe .shoppe-list { width: 94.791667%; /* 728px/768px */ }
 	#footer .about-project p { width: 41.40625%; }
 	#footer .newsletter input[type="text"] {width: 60%;}
+   
+	#webLogo{ width: 100%; text-align: center;  display: none;  }  /* 크기 줄어들시 안보임 id 에 none 처리가 된다. 개별로는 XX*/
+    #webLogo img{ 
+		  
+			  margin: 0 auto;
+			  padding-top: 3em;
+			  /* width: 500px; 
+			  height: 650; */
+			}
+
+
+			#webLogo2{ width: 100%; text-align: center; display:inline-block;}		
+			#webLogo2 img{ width: 100%; text-align: center; display:inline-block;}  /* 자동으로 크기 조절 img - 600px 750px*/		
 	
 }
 /* ---- 
@@ -387,7 +433,19 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	#head h1.logo, h2.title, h2.title span, .film-desc, .film-list, .film-list-item img, 
 	.film-list-item .film-desc, .film-list-item h2.title, .film-list-item h2.title span, 
 	#footer .about-project p, .twitter-feed ol li { width: 100%; }
+
+	/* 상세 페이지 이미지 크기 반응형*/
+	#webLogo {text-align: center;}
+	#webLogo img{ display: block;  float: left; }
 	
+
+
+	/*-----------------
+
+	상세페이지 이미지 크기 반응형
+	-------------------------*/
+
+
 	#head { height: 205px; }
 	h2.title { 
 		width: 100%; 
