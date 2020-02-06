@@ -319,6 +319,8 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 			}
 
 
+			
+
 
 /*  ------------------------------------
 	 web.html
@@ -334,8 +336,8 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	 이미지 가운데 정렬 
 -----------------------------------------*/
 
-#{ width: 100%; text-align: center; }
-#{ display: block; margin: 0px auto;}
+#edit{ width: 100%; text-align: center; }
+#edit img{ display: block; margin: 0px auto; padding-top: 2.5em;}
 
 
 /** ----------------------
@@ -400,6 +402,9 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	.film-list-item h2.title { margin: 0; }
 
 
+    #edit img{ display: block; margin: 0px auto; width: 850px; height: 550px;}
+
+
 }
 /* ---- 
 	max-width 768px 
@@ -411,6 +416,10 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 	#footer .about-project p { width: 41.40625%; }
 	#footer .newsletter input[type="text"] {width: 60%;}
    
+
+	/* -----------------
+	로고 페이지 정렬 --------------
+	*/
 	#webLogo{ width: 100%; text-align: center;  display: none;  }  /* 크기 줄어들시 안보임 id 에 none 처리가 된다. 개별로는 XX*/
     #webLogo img{ 
 		  
@@ -422,7 +431,13 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 
 
 			#webLogo2{ width: 100%; text-align: center; display:inline-block;}		
-			#webLogo2 img{ width: 100%; text-align: center; display:inline-block;}  /* 자동으로 크기 조절 img - 600px 750px*/		
+			#webLogo2 img{ width: 100%; text-align: center; display:inline-block;}  /* 자동으로 크기 조절 img - 600px 750px*/	
+	
+			
+	/*   ---------------
+	edit 페이지 정렬 
+	----------------*/
+			#edit img{ display: block; margin: 0px auto; }
 	
 }
 /* ---- 
