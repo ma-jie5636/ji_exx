@@ -312,11 +312,20 @@ a .film-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Tim
 #homebtn{ padding-bottom: 2em;}
 
 #webLogo{ width: 100%; text-align: center; }
+#webLogo h1{ padding-bottom: 3em; }
+#webLogo p{  color: #fff; font-size: 1.5em ;   }
+.pp{ background-color: #333 ; width: 250px; height: 40px; margin: 0 auto;}
 #webLogo2{ width: 100%; text-align: center; display: none;}
+#webLogo2 h1{ padding-bottom: 3em; }
+#webLogo2 p{  color: #fff; font-size: 1.5em ; }
 #webLogo img{ display: inline-block; 
 			  margin: 0 auto; 
 			  padding-top: 3em; 
+			  padding-bottom: 5em;
 			}
+
+#webLogo2 img {  padding-top: 3em; 
+	padding-bottom: 5em;}			
 
 
 			
