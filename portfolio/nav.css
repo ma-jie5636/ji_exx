@@ -11,7 +11,7 @@
    }
 #nav ul { 
     
-	width: 350px; /*ul a 텍스트 중앙 정렬 반응형 됨.*/
+	width: 250px; /*ul a 텍스트 중앙 정렬 반응형 됨.*/
 	margin: .375em auto; /* 숫자 늘리면 텍스트 바가 줄어든다. 왱??*/
 	color: #ccc; 
 	font: .856em "museo-sans-rounded-1", "museo-sans-rounded-2"; /*14px/16px*/
@@ -19,7 +19,7 @@
 }
 #nav ul li { min-width: 13.75%; 
              float: left;  /*문자 일렬로 나열*/
-             margin-left: 3%; /*문자사이 간격 li 간격*/
+             margin-left: 8%; /*문자사이 간격 li 간격*/
           
 }
 /* #nav ul li:after { content:'\002F'; } */  /* li  텍스터 뒤에 자동 / 붙이기*/
